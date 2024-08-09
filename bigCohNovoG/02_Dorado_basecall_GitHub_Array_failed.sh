@@ -27,7 +27,7 @@ cd $DIRBASE
 
 #export POD5_DIR=`find $DIRBASE -type d -name "*fast5_2_pod5" | sort -V | head -n $SLURM_ARRAY_TASK_ID |tail -n 1 `
 #export POD5_DIR=`cat ${DIRBASE}/POD5_Dirs_List_F004_1_2.txt | head -n $SLURM_ARRAY_TASK_ID |tail -n 1`
-export POD5_DIR=`cat ${DIRBASE}/POD5_Dirs_List_ALL_Fail2.txt | head -n $SLURM_ARRAY_TASK_ID |tail -n 1`
+export POD5_DIR=`cat ${DIRBASE}/POD5_Dirs_List_ALL_Fail.txt | head -n $SLURM_ARRAY_TASK_ID |tail -n 1`
 
 #export DIR="/lustre/groups/itg/teams/kim-hellmuth/projects/yfv/bigCohortNovoG/data/01stBatch"
 export PREFIX=`echo $POD5_DIR | cut -f 15 -d "/" `
